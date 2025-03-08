@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   box-sizing: border-box;
-  font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
 }
 
 body {
@@ -61,10 +63,113 @@ ul {
   font-size: 1.5rem;
 }
 
-header {
+/* header */
+.header {
   background-color: #fff;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
 }
 
+.header-upper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+
+.search-bar {
+  justify-self: center;
+  width: 90%;
+  display: flex;
+  gap: 1rem;
+}
+
+#search {
+  width: 100%;
+  background-color: #e2e8f0;
+  border: none;
+  border-radius: 20px;
+}
+
+.user-info {
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.user-icon-small {
+  width: 2rem;
+  height: 2rem;
+}
+
+.user-icon-small > img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.user-name-small {
+  font-weight: bold;
+}
+
+.header-lower {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.welcome-message,
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.user-icon-large {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.user-icon-large > img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.user-name-large > p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.hi-there {
+  font-size: 0.7rem;
+}
+
+.user-name {
+  font-size: 1.5rem;
+}
+
+.buttons {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-left: 30%;
+}
+
+.buttons > button {
+  border: 0;
+  padding: 8px 1rem;
+  background-color: #1992d4;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.buttons > button:hover {
+  cursor: pointer;
+  background-color: #6caccf;
+  transition: 0.5s;
+}
+
+/* main content */
 main {
   background-color: #e2e8f0;
 }
