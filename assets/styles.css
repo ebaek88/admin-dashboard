@@ -47,6 +47,14 @@ ul {
   padding-right: 1rem;
 }
 
+.brand,
+.nav li > a,
+.misc li > a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .sidebar-content li:not(:first-child, :last-child) {
   margin: 1rem 0;
 }
@@ -67,6 +75,20 @@ ul {
 
 .brand {
   font-size: 1.5rem;
+}
+
+.brand-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.nav-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.sidebar-icon {
+  fill: #fff;
 }
 
 /* header */
@@ -104,12 +126,30 @@ ul {
   gap: 1.5rem;
 }
 
+.notification-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: relative;
+}
+
+.notification-number {
+  background-color: red;
+  color: white;
+  text-align: center;
+  border-radius: 50%;
+  height: 1.2rem;
+  width: 1.2rem;
+  position: absolute;
+  top: -12px;
+  right: -12px;
+}
+
 .user-icon-small {
   width: 2rem;
   height: 2rem;
 }
 
-.user-icon-small > img {
+.user-icon-small img {
   width: 100%;
   border-radius: 50%;
 }
@@ -118,10 +158,27 @@ ul {
   font-weight: bold;
 }
 
+/* style for hyperlinks in the header and the main */
+.user-name-small > a:link,
+.card-content-subject > a:link,
+.announcement-subject > a:link,
+.trending-member-username > a:link {
+  color:#000;
+  text-decoration: none;
+}
+
+.user-name-small > a:hover,
+.card-content-subject > a:hover,
+.announcement-subject > a:hover,
+.trending-member-username > a:hover {
+  text-decoration: underline;
+}
+
 .header-lower {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  overflow: auto;
 }
 
 .welcome-message,
@@ -129,6 +186,10 @@ ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.welcome-message {
+  padding-bottom: 1rem;
 }
 
 .user-icon-large {
@@ -156,7 +217,6 @@ ul {
 }
 
 .buttons {
-  flex-wrap: wrap;
   justify-content: center;
   gap: 1.5rem;
   margin-left: 30%;
@@ -183,10 +243,8 @@ main {
   grid-template-columns: 2.5fr 1fr;
   column-gap: 1rem;
   font-weight: bold;
-}
-
-.projects {
-  padding: 1rem 0 0 1rem;
+  padding: 1.5rem;
+  position: relative;
 }
 
 .cards {
@@ -213,19 +271,88 @@ main {
 }
 
 .card-content {
-  padding: 1rem;
+  padding: 1.5rem;
+  position: relative;
 }
 
-.card-content-subject {
+.card-content-subject,
+.announcement-subject {
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
-.card-content-text {
+.card-content-text,
+.announcement-text,
+.trending-member-username,
+.trending-member-status {
   font-size: 0.8rem;
+  font-weight: normal;
   color: #8b8b8b;
 }
 
-.non-projects {
+.card-content-icons {
+  position: absolute;
+  bottom: 2rem;
+  right: 1rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.non-project-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.non-project-cards > div {
+  min-width: 70px;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.announcements .announcement-article:not(:last-child) {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.announcements .announcement-article:not(:first-child) {
   padding-top: 1rem;
+}
+
+.trending {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.trending-member {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.trending-profile-pic {
+  width: 2rem;
+  height: 2rem;
+}
+
+.trending-profile-pic img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.trending-member-username {
+  color: #000;
+}
+
+.top-icon {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  border-radius: 50%;
+  background-color: #fff;
 }
