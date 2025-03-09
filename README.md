@@ -5,7 +5,7 @@ The description of the project is [here](https://www.theodinproject.com/lessons/
 
 The demo page is [here](https://ebaek88.github.io/admin-dashboard/).         
    
-The admin-dashboard page has been created based on [the design file](https://cdn.statically.io/gh/TheOdinProject/curriculum/43cc6ab69fdfbef40d431a65677d2144668930ac/intermediate_html_css/grid/project_admin_dashboard/imgs/dashboard-project.png).    
+The admin-dashboard page has been created based on [the design file](https://cdn.statically.io/gh/TheOdinProject/curriculum/43cc6ab69fdfbef40d431a65677d2144668930ac/intermediate_html_css/grid/project_admin_dashboard/imgs/dashboard-project.png). All the icons that have been employed are from [Material Design Icons](https://pictogrammers.com/library/mdi/).   
    
 In this project, I was able to practice especially grid and flexbox techniques. In addition, a responsive design is implemented without using the media query.   
    
