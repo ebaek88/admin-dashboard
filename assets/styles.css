@@ -292,7 +292,7 @@ main {
 
 .card-content-icons {
   position: absolute;
-  bottom: 2rem;
+  bottom: 1rem;
   right: 1rem;
   display: flex;
   justify-content: space-around;
